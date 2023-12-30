@@ -1,4 +1,4 @@
-nykon.localhost {
+nykon.io {
   reverse_proxy website:3000 {
      header_down Strict-Transport-Security max-age=31536000; 
   }
