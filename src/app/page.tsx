@@ -1,7 +1,3 @@
-export const metadata = {
-  title: 'Nykon - SaaS Solutions for Developer Tools, Medicine, Education, Logistics, Finance',
-  description: 'At Nykon, we specialize in building, operating, and scaling SaaS products across diverse industries, including developer tools, medicine, education, logistics, and finance. Explore our innovative solutions designed for underrepresented niches.',
-}
 export default function Home () {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
