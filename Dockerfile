@@ -3,7 +3,9 @@ FROM node:16
 
 WORKDIR /usr/src/website
 
-COPY package.json yarn.lock next.config.js postcss.config.js tailwind.config.js tsconfig.json public ./
+COPY package.json yarn.lock next.config.js postcss.config.js tailwind.config.js tsconfig.json ./
+
+COPY ./public ./public
 
 COPY ./src ./src
 
