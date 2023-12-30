@@ -3,9 +3,3 @@ nykon.io {
      header_down Strict-Transport-Security max-age=31536000; 
   }
 }
-
-// nykon.cloud {
-//   reverse_proxy website:3000 {
-//      header_down Strict-Transport-Security max-age=31536000; 
-//   }
-// }
