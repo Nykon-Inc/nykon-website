@@ -1,11 +1,14 @@
+import { Metadata } from 'next'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Nykon - SaaS Solutions for Developer Tools, Medicine, Education, Logistics, Finance',
-  description: 'At Nykon, we specialize in building, operating, and scaling SaaS products across diverse industries, including developer tools, medicine, education, logistics, and finance. Explore our innovative solutions designed for underrepresented niches.',
+
+export const metadata: Metadata = {
+  title: 'Nykon - Empowering Businesses with Innovative SaaS Tools',
+  description: "Explore Nykon's cutting-edge SaaS tools designed to streamline workflows and boost productivity. Transform your business with our intuitive software solutions. Try Nykon today!",
+  keywords: "SaaS Tools,Business Software Solutions,Productivity Apps,Innovative Technology,Nykon Products"
 }
 
 export default function RootLayout ({
