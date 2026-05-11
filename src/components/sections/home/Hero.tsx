@@ -47,10 +47,10 @@ const Hero: React.FC = () => {
             transition={{ delay: 0.3 }}
             className="flex flex-wrap gap-6"
           >
-            <TechnicalButton variant="primary">
+            <TechnicalButton variant="primary" href="/products">
               Explore Products
             </TechnicalButton>
-            <TechnicalButton variant="outline">
+            <TechnicalButton variant="outline" href="/contact">
               Book a Demo
             </TechnicalButton>
           </motion.div>

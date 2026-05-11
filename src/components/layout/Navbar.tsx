@@ -55,12 +55,7 @@ const Navbar: React.FC = () => {
           })}
         </div>
 
-        {/* CTA */}
-        <div className="hidden md:block">
-          <TechnicalButton variant="outline" className="text-xs py-2 px-4">
-            Command Center
-          </TechnicalButton>
-        </div>
+        {/* CTA removed as requested */}
         
         {/* Mobile Toggle (Placeholder) */}
         <div className="md:hidden text-cyan-accent">
