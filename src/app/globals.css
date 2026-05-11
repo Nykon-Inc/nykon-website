@@ -1,23 +1,38 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --font-satoshi: 'Satoshi', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: #125D56;
-    --background-end-rgb: #0E9384;
+@layer base {
+  body {
+    @apply bg-obsidian text-offwhite font-satoshi selection:bg-cyan-accent selection:text-obsidian;
   }
 }
 
-body {
-  height: 100vh;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to right, var(--background-end-rgb), var(--background-start-rgb));
+@layer utilities {
+  .technical-grid {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(34, 211, 238, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(34, 211, 238, 0.05) 1px, transparent 1px);
+  }
+
+  .technical-divider {
+    @apply border-white/10;
+  }
+
+  .cyan-glow {
+    text-shadow: 0 0 15px rgba(34, 211, 238, 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-white/5;
+  }
 }

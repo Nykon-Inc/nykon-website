@@ -1,24 +1,32 @@
 import { Metadata } from 'next'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
+import GridBackground from '@/components/ui/GridBackground'
 
 const inter = Inter({ subsets: ['latin'] })
 
-
 export const metadata: Metadata = {
-  title: 'Nykon - Empowering Businesses with Innovative SaaS Tools',
-  description: "Explore Nykon's cutting-edge SaaS tools designed to streamline workflows and boost productivity. Transform your business with our intuitive software solutions. Try Nykon today!",
-  keywords: "SaaS Tools,Business Software Solutions,Productivity Apps,Innovative Technology,Nykon Products"
+  title: 'NYKON | Intelligent Operational Systems',
+  description: 'NYKON builds intelligent operational systems that help modern organizations scale with visibility, precision, and control.',
 }
 
-export default function RootLayout ({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="bg-obsidian text-offwhite min-h-screen flex flex-col font-satoshi">
+        <GridBackground />
+        <Navbar />
+        <main className="flex-grow pt-20">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }

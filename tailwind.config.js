@@ -7,6 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        obsidian: '#0F172A',
+        'cyan-accent': '#22D3EE',
+        graphite: '#1E293B',
+        offwhite: '#F8FAFC',
+      },
+      fontFamily: {
+        satoshi: ['var(--font-satoshi)', 'sans-serif'],
+      },
+      letterSpacing: {
+        'technical': '0.1em',
+        'expanded': '0.2em',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
