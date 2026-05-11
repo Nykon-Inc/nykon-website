@@ -3,6 +3,7 @@
 import React from 'react';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const AboutPage = () => {
   const values = [
@@ -134,10 +135,11 @@ const AboutPage = () => {
               <div className="aspect-[3/4] bg-graphite/40 border border-white/10 relative overflow-hidden mb-6">
                 {/* Image Placeholder - User to provide actual file */}
                 <div className="absolute inset-0 bg-obsidian opacity-40 group-hover:opacity-20 transition-opacity z-10" />
-                <img
+                <Image
                   src="/team/ahman.jpg"
                   alt="Ahman Emmanuel"
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                  fill
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
                 />
 
                 {/* Technical Corner */}
@@ -160,10 +162,11 @@ const AboutPage = () => {
             >
               <div className="aspect-[3/4] bg-graphite/40 border border-white/10 relative overflow-hidden mb-6">
                 <div className="absolute inset-0 bg-obsidian opacity-40 group-hover:opacity-20 transition-opacity z-10" />
-                <img
+                <Image
                   src="/team/richmond.jpg"
                   alt="Richmond Elaigwu"
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                  fill
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
                 />
 
                 <div className="absolute top-0 right-0 w-16 h-16 pointer-events-none z-20">
@@ -185,10 +188,11 @@ const AboutPage = () => {
             >
               <div className="aspect-[3/4] bg-graphite/40 border border-white/10 relative overflow-hidden mb-6">
                 <div className="absolute inset-0 bg-obsidian opacity-40 group-hover:opacity-20 transition-opacity z-10" />
-                <img
+                <Image
                   src="/team/maryqueen.jpeg"
                   alt="MaryQueen Sunday"
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                  fill
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
                 />
 
                 <div className="absolute top-0 right-0 w-16 h-16 pointer-events-none z-20">

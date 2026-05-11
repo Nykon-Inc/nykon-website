@@ -94,7 +94,7 @@ const CareersPage = () => {
       </section>
 
       <section className="py-32 bg-obsidian border-t border-white/5 text-center">
-         <h4 className="text-offwhite font-black uppercase tracking-expanded mb-6">Don't see a fit?</h4>
+         <h4 className="text-offwhite font-black uppercase tracking-expanded mb-6">Don&apos;t see a fit?</h4>
          <p className="text-offwhite/40 font-satoshi mb-12">We are always scouting for elite talent. Send us your operational dossier.</p>
          <TechnicalButton variant="secondary">Speculative Inquiry</TechnicalButton>
       </section>
