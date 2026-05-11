@@ -78,7 +78,7 @@ const ContactPage = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[10px] text-offwhite/20 font-mono uppercase tracking-widest">Technical Support</span>
-                  <span className="text-xl text-offwhite font-black tracking-technical uppercase">infra@nykon.io</span>
+                  <span className="text-xl text-offwhite font-black tracking-technical uppercase">engineering@nykon.io</span>
                 </div>
               </div>
             </div>
