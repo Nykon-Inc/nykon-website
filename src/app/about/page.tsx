@@ -190,7 +190,7 @@ const AboutPage = () => {
                 <div className="absolute inset-0 bg-obsidian opacity-40 group-hover:opacity-20 transition-opacity z-10" />
                 <Image
                   src="/team/maryqueen.jpeg"
-                  alt="MaryQueen Sunday"
+                  alt="Mary-Queen Uchechukwu"
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
                 />
@@ -200,7 +200,7 @@ const AboutPage = () => {
                   <div className="absolute top-4 right-4 w-4 h-[1px] bg-cyan-accent" />
                 </div>
               </div>
-              <h4 className="text-xl font-black text-offwhite uppercase tracking-technical mb-1">MaryQueen Sunday</h4>
+              <h4 className="text-xl font-black text-offwhite uppercase tracking-technical mb-1">Mary-Queen Uchechukwu</h4>
               <p className="text-cyan-accent text-xs font-black uppercase tracking-expanded">Chief of Operations</p>
             </motion.div>
           </div>
