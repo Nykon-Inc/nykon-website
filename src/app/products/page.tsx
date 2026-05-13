@@ -10,15 +10,32 @@ const ProductsPage = () => {
     {
       name: 'WATCHTOWER',
       category: 'Primary System',
-      description: 'A workforce management and operational intelligence platform designed for high-stakes distributed operations.',
+      description: 'The ultimate workforce management and analytics platform. Monitor productivity, track time, and optimize your team\'s performance.',
+      image: '/watchtower-img.png',
+      url: 'https://watchtower.nykon.cloud',
       features: [
-        'Workforce Visibility',
-        'Productivity Insights',
-        'Operational Analytics',
-        'Activity Monitoring',
-        'Multi-Platform Support'
+        'Advanced Tracking',
+        'Smart Analytics',
+        'Enterprise Security',
+        'Project Optimization',
+        'Precision Management'
       ],
       primary: true
+    },
+    {
+      name: 'DATAFORGE',
+      category: 'Data Infrastructure',
+      description: 'A unified workspace where teams collaborate to build, visualize, and version data models with AI-assisted code generation.',
+      image: '/dataforge-img.png',
+      url: 'https://dataforge.nykon.cloud',
+      features: [
+        'Visual Modeling',
+        'Real-Time Collaboration',
+        'Code Generation',
+        'Schema Conversions',
+        'Version History'
+      ],
+      primary: false
     }
   ];
 
@@ -55,20 +72,38 @@ const ProductsPage = () => {
                     </div>
                   ))}
                 </div>
-                <TechnicalButton variant={product.primary ? 'primary' : 'outline'}>
-                  System Documentation
+                <TechnicalButton 
+                  variant={product.primary ? 'primary' : 'outline'}
+                  href={product.url}
+                >
+                  Visit System
                 </TechnicalButton>
               </div>
               
               <div className={`aspect-video bg-graphite/40 border border-white/10 relative overflow-hidden group ${i % 2 !== 0 ? 'lg:order-1' : ''}`}>
                  <div className="absolute inset-0 technical-grid opacity-[0.05]" />
+                 
+                 {/* Product Image */}
+                 <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-105">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent opacity-60" />
+                 </div>
+
+                 {/* Tech Overlay Elements */}
                  <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-24 h-24 border border-cyan-accent/20 rotate-45 group-hover:scale-110 group-hover:border-cyan-accent/50 transition-all duration-700" />
                     <div className="absolute w-32 h-32 border border-cyan-accent/10 rotate-12 group-hover:rotate-45 transition-all duration-1000" />
                  </div>
+
                  {/* Metadata */}
-                 <div className="absolute bottom-4 left-4 font-mono text-[8px] text-offwhite/20 uppercase tracking-[0.3em]">
-                    NYKON SYSTEMS // {product.name}
+                 <div className="absolute bottom-4 left-4 font-mono text-[8px] text-offwhite/20 uppercase tracking-[0.3em] flex items-center gap-4">
+                    <span>NYKON SYSTEMS // {product.name}</span>
+                    <span className="w-8 h-[1px] bg-offwhite/10" />
+                    <span className="text-cyan-accent/40">v2.4.0_SECURE</span>
                  </div>
               </div>
             </div>
